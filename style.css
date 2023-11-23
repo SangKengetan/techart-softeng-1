@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "MetalMania";
+  src: url("font/MetalMania-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Iceberg";
+  src: url("font/Iceberg-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoMono";
+  src: url("font/RobotoMono-Regular.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "RobotoMono";
+  font-size: 14px;
+}
+
+.container {
+  background: #001632;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.col-1 {
+  width: 50vw;
+  background: url(half-background.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.col-2 {
+  width: 50vw;
+  padding: 10px;
+}
+
+.form {
+  background-color: #082345;
+  border: 3px solid #b6e3ff;
+  padding: 20px;
+  width: 100%;
+  color: #f2f2f2;
+  margin-top: 30px;
+  min-height: 543px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form h1 {
+  text-align: center;
+  font-family: "MetalMania";
+  margin-top: 20px; /* Atur jarak bagian atas */
+  margin-bottom: 20px; /* Atur jarak bagian bawah */
+  font-size: 56px; /* Atur ukuran font */
+}
+
+.form h2 {
+    text-align: center;
+    font-family: "Iceberg";
+    margin-top: 20px; /* Atur jarak bagian atas */
+    margin-bottom: 20px; /* Atur jarak bagian bawah */
+    font-size: 28px; /* Atur ukuran font */
+  }
+
+.form p {
+  text-align: center;
+  font-family: "Iceberg";
+  margin-top: 15px0px; /* Atur jarak bagian atas */
+  margin-bottom: 20px; /* Atur jarak bagian bawah */
+  font-size: 18px; /* Atur ukuran font */
+}
+
+.form ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-content ul li {
+  list-style-type: none;
+  padding-left: 40px;
+  background: url(centang-v1.png) left center no-repeat;
+  background-size: 16px 16px;
+  margin-bottom: 25px; /* Memberikan jarak antar list item secara horizontal */
+}
+
+.circle-image {
+  width: 20px; /* Ubah sesuai kebutuhan */
+  height: 20px; /* Ubah sesuai kebutuhan */
+  border-radius: 50%; /* Untuk membuat gambar menjadi lingkaran */
+  margin-right: 10px; /* Untuk memberikan ruang di antara gambar dan teks */
+}
+
+.form li {
+  margin-bottom: 20px; /* Atur jarak bagian bawah */
+}
+
+.form label {
+  display: block;
+  margin-bottom: 20px;
+}
+/* .form input,
+.form button {
+  display: block;
+  width: 100%; /* Menggunakan lebar 100% */
+  max-width: calc(100% - 20px); /* Menetapkan lebar maksimum dengan memperhitungkan margin-bottom */
+  margin-bottom: 20px;
+} */
+
+.subscribe-container {
+  max-width: 300px;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  box-sizing: border-box;
+  background-color: #b6e3ff; /* Warna latar belakang kolom input */
+}
+
+.form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2777c2; /* Warna latar belakang tombol */
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin-bottom: 20px
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.subscribe-container {
+    position: relative;
+}
+
+.error-container {
+    position: absolute;
+    /* top: 100%; */
+    right: 0;
+    color: #FFB4B4;
+    margin-top: -35px;
+    font-size: 14px;
+}
